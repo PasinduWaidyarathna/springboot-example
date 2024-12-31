@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
-	@GetMapping
+	@GetMapping("/hello")
 	public Object hello() {
 		Map<String, String> object = new HashMap<>();
 		object.put("name", "Integration Ninjas");
